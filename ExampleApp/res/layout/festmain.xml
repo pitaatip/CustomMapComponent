@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.example.ExampleApp"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Festival!"
+            android:layout_gravity="center" android:textSize="30dp"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar" android:layout_gravity="center"/>
+
+    <fragment class="com.custommapsapp.android.CustomMapFragment" android:id="@+id/customfragment" android:layout_height="match_parent" android:layout_width="match_parent" app:map_file="krakow.kmz">
+
+    </fragment>                                            \
+
+</LinearLayout>
+
